@@ -39,6 +39,7 @@ html {
     border-radius: 20% /50%;
     display: block;
     margin-top: 4rem;
+    /* margin-bottom: 0; */
     font-size: 1rem;
     font-family: "Lexend Deca", sans-serif;
     padding: 0.5em 1.3em;
@@ -82,13 +83,15 @@ html {
 
 .container_flex {
     display: flex;
-    justify-content: center;
-    justify-items: center;
 }
 
 .card {
-    padding: 2.5rem;
+    padding: 3.4rem;
     color: var(--color-neutral-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .card_sedans {
