@@ -1,0 +1,104 @@
+:root {
+    --color-orange: hsl(31, 77%, 52%);
+    --color-cyan-light: hsl(184, 100%, 22%);
+    --color-cyan-dark: hsl(179, 100%, 13%);
+    --color-neutral-1: hsla(0, 0%, 100%, 0.75);
+    --color-neutral-2: hsl(0, 0%, 95%);
+}
+
+/* ?    BASE     */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.8;
+}
+
+/* ?    TYPOGRAPHY   */
+
+.card_title {
+    font-family: "Big Shoulders Display", sans-serif;
+    color: var(--color-neutral-2);
+    text-transform: uppercase;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+/* ?    UTILITIES    */
+
+.card_btn {
+    background-color: var(--color-neutral-2);
+    border-radius: 20% /50%;
+    display: block;
+    margin-top: 4rem;
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+    padding: 0.5em 1.3em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid var(--color-neutral-2);
+    cursor: pointer;
+}
+
+.card_btn:hover {
+    background-color: transparent;
+    color: var(--color-neutral-2);
+}
+
+.card_1_btn {
+    color: var(--color-orange);
+}
+
+.card_2_btn {
+    color: var(--color-cyan-light);
+}
+
+.card_3_btn {
+    color: var(--color-cyan-dark);
+}
+
+.card_img {
+    width: 3rem;
+}
+
+/* ?   CARDS      */
+
+.container {
+    width: 70%;
+    min-width: 375px;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 5px;
+}
+
+.container_flex {
+    display: flex;
+}
+
+.card {
+    padding: 2.5rem;
+    color: var(--color-neutral-1);
+}
+
+.card_sedans {
+    background-color: var(--color-orange);
+    border-radius: 5px 0 0 5px;
+}
+
+.card_suvs {
+    background-color: var(--color-cyan-light);
+}
+
+.card_luxury {
+    background-color: var(--color-cyan-dark);
+    border-radius: 0 5px 5px 0;
+}
