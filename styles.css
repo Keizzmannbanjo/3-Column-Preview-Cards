@@ -49,11 +49,6 @@ html {
     cursor: pointer;
 }
 
-.card_btn:hover {
-    background-color: transparent;
-    color: var(--color-neutral-2);
-}
-
 .card_1_btn {
     color: var(--color-orange);
 }
@@ -66,6 +61,28 @@ html {
     color: var(--color-cyan-dark);
 }
 
+.card_1_btn:hover,
+.card_2_btn:hover,
+.card_3_btn:hover {
+    background-color: transparent;
+    color: var(--color-neutral-2);
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+    .card_1_btn:hover {
+        background-color: var(--color-neutral-2);
+        color: var(--color-orange);
+    }
+    .card_2_btn:hover {
+        background-color: var(--color-neutral-2);
+        color: var(--color-cyan-light);
+    }
+    .card_3_btn:hover {
+        background-color: var(--color-neutral-2);
+        color: var(--color-cyan-dark);
+    }
+}
+
 .card_img {
     width: 3rem;
 }
@@ -73,16 +90,20 @@ html {
 /* ?   CARDS      */
 
 .container {
-    width: 70%;
-    min-width: 375px;
-    max-width: 1440px;
-    margin: auto;
-    margin-top: 20vh;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20vh auto;
     border-radius: 5px;
 }
 
 .container_flex {
     display: flex;
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+    .container_flex {
+        flex-direction: column;
+    }
 }
 
 .card {
@@ -99,6 +120,12 @@ html {
     border-radius: 5px 0 0 5px;
 }
 
+@media screen and (min-width: 375px) and (max-width: 800px) {
+    .card_sedans {
+        border-radius: 5px 5px 0 0;
+    }
+}
+
 .card_suvs {
     background-color: var(--color-cyan-light);
 }
@@ -106,4 +133,10 @@ html {
 .card_luxury {
     background-color: var(--color-cyan-dark);
     border-radius: 0 5px 5px 0;
+}
+
+@media screen and (min-width: 375px) and (max-width: 800px) {
+    .card_luxury {
+        border-radius: 0 0 5px 5px;
+    }
 }
