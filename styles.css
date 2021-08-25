@@ -82,6 +82,8 @@ html {
 
 .container_flex {
     display: flex;
+    justify-content: center;
+    justify-items: center;
 }
 
 .card {
